@@ -1,6 +1,6 @@
 using System;
 
-// Базовый класс Transport
+
 public class Transport
 {
     public string Model { get; set; }
@@ -16,7 +16,7 @@ public class Transport
         Console.WriteLine("Транспорт движется");
     }
     
-    // Защищенный метод для изменения скорости (для наследников)
+
     protected void SetSpeed(int value)
     {
         Speed = value;
@@ -28,7 +28,7 @@ public class Transport
     }
 }
 
-// Класс Car, наследник Transport
+
 public class Car : Transport
 {
     public void Accelerate(int value)
@@ -50,7 +50,7 @@ public class Car : Transport
     }
 }
 
-// Класс Bicycle, наследник Transport
+
 public class Bicycle : Transport
 {
     public void Pedal()
@@ -64,7 +64,7 @@ public class Bicycle : Transport
     }
 }
 
-// Пример использования
+
 class Program
 {
     static void Main()
